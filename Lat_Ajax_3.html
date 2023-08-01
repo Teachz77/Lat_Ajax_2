@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan AJAX 3 (Pokemon)</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section{
+            text-align: center;
+        }
+
+        #btn{
+            background-color: #feca57;
+            border: 1px solid #c8d6e5;
+            border-radius: 3px;
+            padding: 0 20px;
+        }
+
+        #btn:hover{
+            background: #ff9f43;
+        }
+
+        .cardPoke{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .poks{
+            background-color: #eee;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .poke-detail{
+            border-radius: 2px solid;
+        }
+
+        .poke-detail img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            max-width: 90%;
+        }
+
+        .number-name{
+            color: white;
+        }
+
+        .type{
+            color: white;
+        }
+
+         /* .imgContainer img {
+            max-width: 90%;
+        }
+        
+        .info {
+            margin-top: 20px;
+        }
+        
+        .number {
+            padding: 2px 13px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        
+        .name {
+            margin: 15px 7px;
+            letter-spacing: 2px;
+        } */ 
+
+
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Get Pokemons</h1>
+        <button id="btn" onclick="fetchPokemons(40)">Get!</button>
+
+        <div class="cardPoke" id="cardPoke">
+
+        </div>
+
+    </div>
+</body>
+<script src="Script_Ajax_3.js"></script>
+</html>
